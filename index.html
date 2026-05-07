@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukytuky | Crypto Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #07090e;
+            --solana-teal: #14F195;
+            --solana-purple: #9945FF;
+            --deep-blue: #0b1426;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-main: #ffffff;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1e293b 0%, var(--bg-dark) 100%);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--solana-teal);
+            padding: 3px;
+            background: var(--bg-dark);
+        }
+
+        .profile-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(20, 241, 149, 0.2);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .handle {
+            color: var(--solana-teal);
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 32px;
+            display: block;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 16px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Call to Action (CTA) */
+        .cta {
+            background: linear-gradient(90deg, var(--solana-purple) 0%, #6366f1 100%);
+            border: none;
+            color: white;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(153, 69, 255, 0.2);
+            margin-bottom: 8px;
+        }
+
+        .cta:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 12px 24px rgba(153, 69, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .footer-tag {
+            margin-top: 50px;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-container">
+            <img src="perfil.webp" alt="Tukytuky" class="profile-img">
+            <div class="profile-glow"></div>
+        </div>
+        
+        <h1>Tukytuky</h1>
+        <span class="handle">@tukytuky_</span>
+
+        <div class="links-wrapper">
+            <a href="https://www.obsidialabs.com/?" target="_blank" class="link-card cta">
+                START TRADING FOR FREE
+            </a>
+
+            <a href="https://www.instagram.com/tukytuky_?igsh=cDN1YWR4cW5uNXgy&utm_source=qr" target="_blank" class="link-card">
+                Instagram
+            </a>
+
+            <a href="https://twitter.com/Tukytuky_" target="_blank" class="link-card">
+                Twitter (X)
+            </a>
+
+            <a href="https://www.tiktok.com/@tukysol_?_r=1&_t=ZS-969Mnc1a5pq" target="_blank" class="link-card">
+                TikTok
+            </a>
+
+            <a href="https://youtube.com/@tukyy?si=hsSqDhUfsaFNbCkI" target="_blank" class="link-card">
+                YouTube
+            </a>
+
+            <a href="https://coinmarketcap.com/community/profile/Tukytuky_" target="_blank" class="link-card">
+                Coinmarket Community
+            </a>
+        </div>
+
+        <p class="footer-tag">Tuky Solutions</p>
+    </div>
+
+</body>
+</html>
